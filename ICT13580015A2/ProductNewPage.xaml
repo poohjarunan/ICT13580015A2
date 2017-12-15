@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="ICT13580015A2.ProductNewPage">
+    <Grid>
+        <Image
+            Source="https://i.pinimg.com/originals/39/6a/99/396a992f258d96b52b6310bc19e1e1e6.jpg"
+               Aspect="Fill"/>
+        <ScrollView>
+            <Frame
+                Margin="30"
+                CornerRadius="20"
+                BackgroundColor="#C0FFFFFF"
+                VerticalOptions="Start">
+                
+<StackLayout Orientation="Vertical">
+            <Label x:Name="titleLabel" Text="เพิ่มสินค้าใหม่" HorizontalTextAlignment="Center" FontSize="20" BackgroundColor="Gray"/>
+            <Label Text="ชื่อสินค้า" BackgroundColor= "Silver"/>
+            <Entry Placeholder="ชื่อสินค้า" x:Name="nameEntry"/>
+            <Label Text="รายละเอียดสินค้า" BackgroundColor= "Silver"/>
+            <Entry Placeholder="รายละเอียดสินค้า" x:Name="desEntry"/>
+            <Label Text="ราคาสินค้า" BackgroundColor= "Silver"/>
+            <Entry Placeholder="ราคาสินค้า" x:Name="productPriceEntry"/>
+            <Label Text="ราคาขาย" BackgroundColor= "Silver"/>
+            <Entry Placeholder="ราคาขาย" x:Name="sellPriceEntry"/>
+            <Label Text="จำนวนสินค้าในสต็อก" BackgroundColor= "Silver"/>
+            <Entry Placeholder="จำนวนสินค้าในสต็อก" x:Name="stockEntry"/>
+            <Label Text="หมวด" BackgroundColor= "Silver"/>
+            <Picker Title="เลือกหมวด" x:Name="categoryPicker"/>
+            <Button Text="ตกลง" TextColor="White" BackgroundColor="Green" x:Name="okButton"/>
+            <Button Text="ยกเลิก" TextColor="White" BackgroundColor="Red" x:Name="cancelButton"/>
+                    
+
+</StackLayout>
+
+                </Frame></ScrollView></Grid>
+    
+
+</ContentPage>
